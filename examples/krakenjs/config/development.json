@@ -1,0 +1,46 @@
+{
+
+
+    "middleware": {
+
+        "devtools": {
+            "enabled": true,
+            "priority": 35,
+            "module": {
+                "name": "kraken-devtools",
+                "arguments": [
+                    "path:./public",
+                    "path:./.build", {
+                        "copier": {
+                            "module": "kraken-devtools/plugins/copier",
+                            "files": "**/*"
+                        }
+                    }
+                ]
+            }
+        },
+        "mocking": {
+            "enabled": true,
+            "priority": 10,
+            "module": {
+                "name": "path:./../../lib",
+                "arguments": [{
+                    "requestURI": "/",
+                    "mocks": {
+                        "folder": "path:./mocks",
+                        "structure": ["type"]
+                    },
+                    "wrappers": {
+                        "enabled": "config:middleware.mocking.enabled",
+                        "mappings": [{
+                            "prefix": "random",
+                            "replace": "path:./models/index",
+                            "wrapper": "path:./mocks/wrappers/wrapperFile"
+                        }]
+                    }
+                }]
+            }
+        }
+    }
+
+}

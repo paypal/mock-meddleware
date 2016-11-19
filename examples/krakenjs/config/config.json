@@ -1,0 +1,26 @@
+{
+    "middleware": {
+
+        "static": {
+            "enabled": false,
+            "module": {
+                "arguments": ["path:./.build"]
+            }
+        },
+        "router": {
+            "module": {
+                "arguments": [{
+                    "directory": "path:./controllers"
+                }]
+            }
+        },
+        "expressView": {
+            "priority": 100,
+            "enabled": true,
+            "module": {
+                "name": "engine-munger/lib/expressView",
+                "view cache": "false"
+            }
+        }
+    }
+}

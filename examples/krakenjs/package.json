@@ -1,0 +1,24 @@
+{
+  "name": "mm-krakenjs-example-simple",
+  "version": "1.0.0",
+  "description": "Mock-Meddleware Example for KrakenJS",
+  "author": "Raymond Ho <chunkiat82@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "engine-munger": "^0.2.0",
+    "express": "^4.3.0",
+    "kraken-devtools": "^1.0.0",
+    "kraken-js": "^1.0.1",
+    "localizr": "^0.1.6",
+    "mock-meddleware": "^1.0.0",
+    "requirejs": "^2.3.2"
+  },
+  "generator-kraken": {
+    "version": "1.1.2",
+    "template": false,
+    "css": false
+  }
+}
