@@ -1,3 +1,7 @@
+[![build status](https://img.shields.io/travis/paypal/mock-meddleware/master.svg?style=flat-square)](https://travis-ci.org/paypal/mock-meddleware)
+[![npm version](https://img.shields.io/npm/v/mock-meddleware.svg?style=flat-square)](https://www.npmjs.com/package/mock-meddleware)
+[![npm downloads](https://img.shields.io/npm/dm/mock-meddleware.svg?style=flat-square)](https://www.npmjs.com/package/mock-meddleware)
+
 # mock-meddleware
 
 It is a mocking middleware which can be used in either Express or KrakenJS.
