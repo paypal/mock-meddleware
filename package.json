@@ -18,14 +18,15 @@
   "devDependencies": {
     "eslint": "^1.10.3",
     "express": "^4.13.4",
-    "istanbul": "^0.4.1",
+    "istanbul": "^0.4.5",
+    "istanbul-coveralls": "^1.0.3",
     "lodash": "^4.12.0",
     "tape": "^4.2.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/tape test/*.js",
     "lint": "./node_modules/.bin/eslint lib",
-    "cover": "./node_modules/.bin/istanbul cover node_modules/.bin/tape -- test/*.js"
+    "cover": "./node_modules/.bin/istanbul cover node_modules/.bin/tape -- test/*.js && istanbul-coveralls"
   },
   "main": "./lib",
   "license": "MIT",
