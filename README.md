@@ -1,6 +1,7 @@
 [![build status](https://img.shields.io/travis/paypal/mock-meddleware/master.svg?style=flat-square)](https://travis-ci.org/paypal/mock-meddleware)
 [![npm version](https://img.shields.io/npm/v/mock-meddleware.svg?style=flat-square)](https://www.npmjs.com/package/mock-meddleware)
 [![npm downloads](https://img.shields.io/npm/dm/mock-meddleware.svg?style=flat-square)](https://www.npmjs.com/package/mock-meddleware)
+[![npm downloads](https://img.shields.io/coveralls/paypal/mock-meddleware/master.svg?style=flat-square)](https://coveralls.io/github/paypal/mock-meddleware)
 
 # mock-meddleware
 
@@ -8,11 +9,11 @@ It is a mocking middleware which can be used in either Express or KrakenJS.
 
 It allows you to override CommonJS modules behaviour.
 
-## Background 
+## Background
 Development involving multiple teams, sometimes, certain service calls might not ready for integration and you need to mock those responses. This middleware allows you to test your code to handle those responses and new code/business logics following that. It can parallelise the frontend and backend development based on predefined contracts (i.e. JSON).
 
 ## Examples
-   
+
 ### Express
 
 ```js
@@ -94,7 +95,7 @@ development.json
   * in the each structured folder, json mocks are prefixed like `serviceA.1.json`
     * each time a 'replace function' is called the corresponding index is incremented i.e. `serviceA.2.json`
 * Append `reset=1` to the URL to reset the indexes - http://localhost:8080?scenarios=happy&reset=1
- 
+
 You can refer to the examples/tests for further explanation
 
 ## License
